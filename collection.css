@@ -1,0 +1,121 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+body{
+  margin: 0;
+  background-color: #fff9eb;
+}
+.navigation ul {
+ list-style:none; padding:0; margin:0;}
+.navigation ul li{display:inline-block; padding-left: 30px}
+
+.navigation li a{
+  color: black;
+  text-decoration: none;
+}
+.navigation{
+ background:#DDD;
+ color:#676767;
+ text-align:center;
+ padding: 20px;
+ font-size: 20px;
+ }
+h1{
+  background-color: #dbc893;
+  padding: 15px 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.colone{
+  height: 480px;
+  width: 361px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.image_container{
+  height: 480px;
+  width: 1083px;
+  position: relative;
+  transition: left 2s;
+}
+
+.slider_image{
+  float: left;
+  margin: 2px;
+  padding: 0;
+  height: 480px;
+  width: 361px;
+}
+
+ .colone .slide-number{
+   position:absolute;
+   left: 5px;
+   top: 5px;
+   background-color: rgba(0, 0, 0, 0.6);
+   font-size: 20px;
+   color: white;
+   padding: 5px 8px;
+   z-index: 2;
+   border-radius: 6px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+ }
+
+.slide-controls{
+  width: 361px;
+  margin: auto;
+  padding: 2px;
+  }
+
+.slide-controls .prev,
+.slide-controls .next{
+  background-color:#c29d53;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+.slide-controls .prev{
+  float: left;
+}
+.slide-controls .next{
+  float:right;
+}
+.slide-controls .prev.disabled,
+.slide-controls .next.disabled{
+  background-color: rgba(194, 157, 83, 0.5);
+  cursor: no-drop;
+}
+
+.slide-controls .indicators{
+  width: 60%;
+  float:left;
+  text-align: center;
+}
+.slide-controls .indicators ul li{
+  display:inline-block;
+  background-color:white;
+  color: black;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  cursor: pointer;
+  text-align: center;
+}
+.slide-controls .indicators ul li.active{
+ background-color: #c29d53;
+ color: black;
+
+}
