@@ -4,14 +4,14 @@ body {
   font-family: Times New Roman Georgia;
 }
 .header {
-  background: #dbc893;
+  background: #a4ac86;
   color: #000000;
   font-size: 20px;
   text-align: center;
   padding: 20px 0;
 }
 .navigation {
-  background: #dbc893;
+  background: #ebe3ce;
   color: #676767;
   text-align: center;
   padding: 20px;
@@ -39,7 +39,7 @@ img {
   width: 600px;
 }
 .footer {
-  background: #dbc893;
+  background: #c2c5aa;
   color: #000000;
   font-size: 20px;
   text-align: center;
