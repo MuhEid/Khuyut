@@ -4,14 +4,16 @@ body {
   font-family: Times New Roman Georgia;
 }
 .header {
-  background: #a4ac86;
-  color: #000000;
+  background: #333d29;
+  color: #a4ac86;
+  margin: auto;
   font-size: 20px;
-  text-align: center;
-  padding: 20px 0;
+  text-align: left;
+  float: left;
+  padding: 20px;
 }
 .navigation {
-  background: #ebe3ce;
+  background: #333d29;
   color: #676767;
   text-align: center;
   padding: 20px;
@@ -32,15 +34,18 @@ ul li {
 }
 
 li a {
-  color: black;
+  color: #a4ac86;
   text-decoration: none;
 }
 img {
   width: 600px;
 }
 .footer {
-  background: #c2c5aa;
-  color: #000000;
+  background: #333d29;
+  color: #a4ac86;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-size: 20px;
   text-align: center;
   padding: 10px 0;
