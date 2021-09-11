@@ -5,7 +5,7 @@
 }
 body{
   margin: 0;
-  background-color: #fff9eb;
+  
 }
 
 .navigation ul {
@@ -13,22 +13,33 @@ body{
 .navigation ul li{display:inline-block; padding-left: 30px}
 
 .navigation li a{
-  color: black;
+  color: #FEFBF3;
   text-decoration: none;
 }
 .navigation{
- background:#DDD;
- color: #676767;
+ background:#566645;
+ color: #FEFBF3;
  text-align:center;
  padding: 20px;
  font-size: 20px;
  }
+
+ ul li {
+   font-family: 'Glory', sans-serif;;
+ }
 .productOrder{
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  background-color: #dbc893;
+  font-family: 'Glory', sans-serif;
+  
 }
 .product_one{
   text-align: center;
+}
+.delightdetails ul{
+  list-style: none;
+  padding-left: 25px;
+  font-size: 20px;
+  font-family: 'Glory', sans-serif;
+
 }
 .product_one img{
   height: 480px;
@@ -37,10 +48,31 @@ body{
   position: relative;
 }
 
-.delightdetails ul{
+.product_two{
+  text-align: center;
+}
+.product_two img{
+  height: 480px;
+  width: 361px;
+  padding: 2px;
+  position: relative;
+}
+
+.curtainDetails ul{
   list-style: none;
   padding-left: 25px;
   font-size: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-
-  }
+  font-family: 'Glory', sans-serif;
+  
+}
+.footer {
+  background: #566645;
+  font-family: 'Glory', sans-serif;
+  color: #FEFBF3;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}

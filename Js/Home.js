@@ -1,8 +1,7 @@
-function sleepIn(weekday, vacation) {
-    return (!weekday || vacation)
-}
+let likes = 10;
 
-function monkeyTrouble(aSmile, bSmile){
-    // return(!aSmile && !bSmile)
-    return (!aSmile && !bSmile)
-}
+likes *= 2;
+console.log(likes);
+
+let result = 'the blog has ' + likes + ' Likes';
+console.log(result);
