@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/CSS/collection.css">
+    <link rel="stylesheet" href="CSS/collection.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -17,30 +17,26 @@
         <li><a href="contact.html">Contact us</a></li>
       </ul>
     </div>
+
+
+
     <h1>Collection #1</h1>
-
-
-
-    <div class="colone">
-      <div id="slide-number" class="slide-number">Slide #1</div>
-        <div class="image_container">
-          <img class="slider_image" src="assets/coll2_1.jpg" alt="">
-          <img class="slider_image" src="assets/coll2_2.jpg" alt="">
+    <div class="slider1-container">
+      <img id="prevBtn" src="assets/icons8-left-arrow-32.png" alt="">
+      <img id="nextBtn" src="assets/icons8-right-arrow-32.png" alt="">
+        <div class="image-container">
+          <img src="assets/coll2_2.jpg" id="lastImage" alt="">
+          <img src="assets/coll2_1.jpg" alt="">
+          <img src="assets/coll2_2.jpg" alt="">
+          <img src="assets/coll2_1.jpg" id="firstImage"  alt="">
         </div>
     </div>
 
+    
 
-    <div class="slide-controls">
-      <span id="prev" class="prev">Previous</span>
-      <span id="indicators" class="indicators">
-        <ul>
-          <li class="active">1</li>
-          <li>2</li>
-        </ul>
-      </span>
-      <span id="next" class="next">Next</span>
+    <!-- <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button> -->
 
-
-    </div>
+    <script src="Js/collection.js"></script>
   </body>
 </html>
