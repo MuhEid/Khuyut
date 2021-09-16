@@ -81,20 +81,59 @@ li a {
 
 }
 
-.intro {
-  font-size: 20px;
-  font-family: 'Glory', sans-serif;
+/* Second Slider Styles */
+
+.slider2-container{
+  width: 360px;
+  height: 480px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
   
 }
+
+ .image2-container{
+   display: flex;
+   width: 100%;
+   height: 100%;
+      
+ }
+
+ #prevBtnSndSlider {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  left: 5%; 
+  font-size: 20px;
+  color: black;
+  
+ }
+
+ #nextBtnSndSlider {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  right: 5%; 
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  right: 5%;
+
+}
+
+/* Footer Styles */
+
 .footer {
   background: #566645;
   color: #FEFBF3;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   font-size: 20px;
   text-align: center;
   padding: 10px 0;
+  margin-top: auto;
 }
 
 

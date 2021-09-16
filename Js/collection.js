@@ -5,7 +5,7 @@ const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
 let counter = 1;
-const size = imageContainer[0].clientWidth; 
+let size = imageContainer[0].clientWidth; 
 
 slideOneContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -44,6 +44,58 @@ slideOneContainer.addEventListener('transitionend', ()=>{
         slideOneContainer.style.transition = "none";
         counter = imageContainer.length - counter;
         slideOneContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    }
+});
+
+// Second collection slider
+
+const slideTwoContainer = document.querySelector('.image2-container');
+const imageTwoContainer = document.querySelectorAll('.image2-container img');
+
+const prevBtnSndSlider = document.querySelector('#prevBtnSndSlider');
+const nextBtnSndSlider = document.querySelector('#nextBtnSndSlider');
+
+let counterTwo = 1;
+size = imageTwoContainer[0].clientWidth; 
+
+slideTwoContainer.style.transform = 'translateX(' + (-size * counterTwo) + 'px)';
+
+nextBtnSndSlider.addEventListener('click',()=>{
+    if (counterTwo >= imageContainer.length -1) return;
+    slideTwoContainer.style.transition = "transform 0.4s ease-in-out";
+    counterTwo++;
+    slideTwoContainer.style.transform = 'translateX(' + (-size * counterTwo) + 'px)';
+    console.log(counterTwo);
+
+
+});
+
+prevBtnSndSlider.addEventListener('click',()=>{
+    if (counterTwo <= 0) return;
+    slideTwoContainer.style.transition = "transform 0.4s ease-in-out";
+    counterTwo--;
+    slideTwoContainer.style.transform = 'translateX(' + (-size * counterTwo) + 'px)';
+    console.log(counterTwo);
+
+    
+
+});
+
+slideTwoContainer.addEventListener('transitionend', ()=>{
+    if (imageContainer[counterTwo].id === 'lastImageSndSlider'){
+        slideTwoContainer.style.transition = "none";
+        counterTwo = imageTwoContainer.length - 2;
+        slideTwoContainer.style.transform = 'translateX(' + (-size * counterTwo) + 'px)';
+
+    }
+});
+
+slideTwoContainer.addEventListener('transitionend', ()=>{
+    if (imageTwoContainer[counterTwo].id === 'firstImageSndSlider'){
+        slideTwoContainer.style.transition = "none";
+        counterTwo = imageTwoContainer.length - counterTwo;
+        slideTwoContainer.style.transform = 'translateX(' + (-size * counterTwo) + 'px)';
 
     }
 });
